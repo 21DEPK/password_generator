@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="result">
+        <input type="text" readonly />
+        <span class="material-symbols-outlined" id="copy"> content_copy </span>
+      </div>
+      <h3>Length :</h3>
+      <div class="range">
+        <input type="range" name="length" max="34" min="4" value="4" />
+        <button>4</button>
+      </div>
+
+      <div class="contraints">
+        <div class="checkbox">
+          <input type="checkbox" value="U" />Include UpperAlphabets
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value="L" />Include LowerAlphabets
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value="N" />Include Numbers
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value="S" />Include Symbols
+        </div>
+      </div>
+
+      <button id="generate">Generate Password</button>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

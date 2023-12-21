@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  user-select: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+.container {
+  margin: 16vh auto;
+  width: 400px;
+  height: 400px;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.result {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.result input {
+  flex-grow: 1;
+  height: 28px;
+  border: 1px solid;
+  padding: 6px;
+  font-size: 22px;
+  border-radius: 4px;
+}
+.result input:focus {
+  outline: none;
+}
+
+h3 {
+  margin: 12px 0px 0px 0px;
+  color: blue;
+  font-size: 18px;
+  font-weight: 600;
+}
+.range {
+  display: flex;
+}
+.range input {
+  flex-grow: 1;
+}
+.range button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 600;
+}
+.contraints {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.checkbox {
+  display: flex;
+}
+.checkbox input {
+  margin-right: 4px;
+}
+
+#generate {
+  height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgba(0, 128, 0, 0.808);
+  font-size: 18px;
+  border: none;
+  margin-top: auto;
+  border-radius: 4px;
+}
+#generate:hover {
+  background-color: green;
+}
+
+#copy,
+#copied {
+  cursor: pointer;
+}
